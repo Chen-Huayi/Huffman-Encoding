@@ -1,12 +1,17 @@
-Please ensure your computer system suppose to run JavaScript !  
-Part1: run the command `make test`  
-Part2&3: run the command `make encode`  
-
-The current input file is offical test file `hamlet.txt`  
-if user want to test other files, please change and hardcode the another input file  
-substituded at the end of file `HuffEncoding.js`, for eample, if file name is `example.txt`, then  
+# Huffman Encoding Implementation
+### Part1
+Set up some data structures, including **Dictionary** and **Hashtable**, run unit tests:
+```shell
+node TestPart1.js
 ```
-let huffman=new HuffEncoding("example.txt");
+### Part2&3
+Using these data structures from Part1 to build Huffman tree, then applies Huffman 
+encoding algorithm on input file. 
+The current input file is official test file `hamlet.txt` by running command:  
+```shell
+node HuffEncoding.js hamlet.txt
 ```
-and then, you will see some details of input file's characters (weight, huffman code)  
-Also, the output.txt will be writen to a Huffman code by appending.
+If user want to test other files, please **HARDCODE** the another input file name <`filename`> with command:  
+`node HuffEncoding.js <filename>`  
+And then, you will see some details of input file's characters (weight, huffman code). 
+Also, the file `output.txt` will be written to a Huffman code by appending.

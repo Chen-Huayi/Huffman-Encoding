@@ -5,7 +5,6 @@ class HuffmanTree{
     #_root;
     #_treeArray;
     #_treeSet;
-    #_weight;
     #_huffmanCode="";
 
     constructor(treeArray) {

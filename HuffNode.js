@@ -5,7 +5,6 @@ class HuffNode{
     #_weight;
     #_left;
     #_right;
-    #_huffCode;
 
     constructor(char, weight, left, right) {
         this.#_char=char;

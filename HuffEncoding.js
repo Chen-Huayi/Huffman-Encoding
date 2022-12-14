@@ -79,5 +79,5 @@ class HuffEncoding{
 
 }
 
-let huffman=new HuffEncoding("hamlet.txt");
+let huffman=new HuffEncoding(process.argv[2]);
 huffman.encode();

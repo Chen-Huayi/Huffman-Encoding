@@ -3,17 +3,6 @@ let assert=require('assert');
 let Dictionary=require('./Dictionary.js');
 
 
-main();
-
-function main(){
-    testEmpty();
-    testOneElement();
-    testContainStr();
-    testContainNum();
-    testPutInSameStr();
-    testPutInSameNum();
-}
-
 function testEmpty() {
     let d=new Dictionary();
 
@@ -83,3 +72,15 @@ function testPutInSameNum() {
 
     console.log("Test pass");
 }
+
+
+function runTests(){
+    testEmpty();
+    testOneElement();
+    testContainStr();
+    testContainNum();
+    testPutInSameStr();
+    testPutInSameNum();
+}
+
+runTests();
